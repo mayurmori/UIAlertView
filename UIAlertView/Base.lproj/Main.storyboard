@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dsd-iZ-0PV">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="b6X-LA-IXu">
+            <objects>
+                <viewController id="Dsd-iZ-0PV" customClass="ViewController" customModule="UIAlertView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rlp-L8-o58">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZvY-fL-0fy">
+                                <rect key="frame" x="128" y="344" width="158" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Click4Alert"/>
+                                <connections>
+                                    <action selector="btnClick4Alert:" destination="Dsd-iZ-0PV" eventType="touchUpInside" id="yQ7-XY-Cvl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZvY-fL-0fy" firstAttribute="centerX" secondItem="Rlp-L8-o58" secondAttribute="centerX" id="jiv-H0-WPQ"/>
+                            <constraint firstItem="ZvY-fL-0fy" firstAttribute="centerY" secondItem="Rlp-L8-o58" secondAttribute="centerY" id="o6H-Hq-Bh5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WyU-ae-4K2"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnClick4Alert" destination="ZvY-fL-0fy" id="6q7-xJ-iFq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JDY-x1-xHo" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
